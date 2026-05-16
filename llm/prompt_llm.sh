@@ -6,7 +6,8 @@ export ID_TOKEN=$(gcloud auth print-identity-token)
 if [ "$#" -eq 1 ]; then
     MESSAGE=$1
 else
-    MESSAGE="Jak często powinien być mierzony poziom chloru w basenie?"
+    echo "Usage: $0 \"message\""
+    exit 1
 fi
 
 
